@@ -1,0 +1,163 @@
+object fMain: TfMain
+  Left = 431
+  Height = 273
+  Top = 343
+  Width = 824
+  Caption = 'C166 Address Calculator'
+  ClientHeight = 273
+  ClientWidth = 824
+  LCLVersion = '2.0.12.0'
+  object ePage: TLabeledEdit
+    Left = 24
+    Height = 54
+    Top = 48
+    Width = 160
+    CharCase = ecUppercase
+    EditLabel.Height = 30
+    EditLabel.Width = 160
+    EditLabel.Caption = 'Page'
+    EditLabel.ParentColor = False
+    EditLabel.ParentFont = False
+    EditLabel.Font.Height = -21
+    Font.Height = -40
+    Font.Name = 'DejaVu Sans Mono'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    Text = '0'
+    OnChange = eExtChange
+    OnClick = eClick
+  end
+  object eOffset: TLabeledEdit
+    Left = 192
+    Height = 54
+    Top = 48
+    Width = 160
+    CharCase = ecUppercase
+    EditLabel.Height = 30
+    EditLabel.Width = 160
+    EditLabel.Caption = 'Offset'
+    EditLabel.ParentColor = False
+    EditLabel.ParentFont = False
+    EditLabel.Font.Height = -21
+    Font.Height = -40
+    Font.Name = 'DejaVu Sans Mono'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    Text = '0'
+    OnChange = eExtChange
+    OnClick = eClick
+  end
+  object eAddress: TLabeledEdit
+    Left = 640
+    Height = 54
+    Top = 48
+    Width = 160
+    CharCase = ecUppercase
+    EditLabel.Height = 30
+    EditLabel.Width = 160
+    EditLabel.Caption = 'Address'
+    EditLabel.ParentColor = False
+    EditLabel.ParentFont = False
+    EditLabel.Font.Height = -21
+    Font.Height = -40
+    Font.Name = 'DejaVu Sans Mono'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+    Text = '0'
+    OnChange = eAddressChange
+    OnClick = eClick
+  end
+  object bEncodeEXT: TButton
+    Left = 360
+    Height = 54
+    Top = 48
+    Width = 59
+    Caption = '>'
+    Font.Height = -24
+    Font.Name = 'Arial Black'
+    Font.Style = [fsBold]
+    OnClick = bEncodeEXTClick
+    ParentFont = False
+    TabOrder = 5
+    TabStop = False
+  end
+  object bDecodeAddr: TButton
+    Left = 576
+    Height = 54
+    Top = 48
+    Width = 59
+    Caption = '<'
+    Font.Height = -24
+    Font.Name = 'Arial Black'
+    Font.Style = [fsBold]
+    OnClick = bDecodeAddrClick
+    ParentFont = False
+    TabOrder = 3
+    TabStop = False
+  end
+  object Bevel1: TBevel
+    Left = 8
+    Height = 14
+    Top = 106
+    Width = 426
+    Shape = bsBottomLine
+  end
+  object eDPP: TLabeledEdit
+    Left = 192
+    Height = 54
+    Top = 160
+    Width = 160
+    CharCase = ecUppercase
+    EditLabel.Height = 30
+    EditLabel.Width = 160
+    EditLabel.Caption = 'DPP'
+    EditLabel.ParentColor = False
+    EditLabel.ParentFont = False
+    EditLabel.Font.Height = -21
+    Font.Height = -40
+    Font.Name = 'DejaVu Sans Mono'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 6
+    Text = '0'
+    OnChange = eDPPChange
+    OnClick = eClick
+  end
+  object listDPP: TValueListEditor
+    Left = 24
+    Height = 114
+    Top = 136
+    Width = 160
+    FixedCols = 0
+    RowCount = 5
+    ScrollBars = ssNone
+    TabOrder = 7
+    Strings.Strings = (
+      'DPP0=4'
+      'DPP1=5'
+      'DPP2=C0'
+      'DPP3=3'
+    )
+    ColWidths = (
+      64
+      92
+    )
+  end
+  object bEncodeDPP: TButton
+    Left = 360
+    Height = 54
+    Top = 160
+    Width = 59
+    Caption = '>'
+    Font.Height = -24
+    Font.Name = 'Arial Black'
+    Font.Style = [fsBold]
+    OnClick = bEncodeDPPClick
+    ParentFont = False
+    TabOrder = 4
+    TabStop = False
+  end
+end

@@ -1,0 +1,8 @@
+.vscode/
+backup/
+lib/
+*.ico
+*.lps
+*.exe
+*.res
+*.log
